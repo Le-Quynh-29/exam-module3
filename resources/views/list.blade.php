@@ -21,6 +21,7 @@
 <table class="table">
     <thead class="table-dark">
     <tr>
+        <th>#</th>
         <th>Mã đại lý</th>
         <th>Tên đại lý</th>
         <th>Địa chỉ</th>
@@ -34,6 +35,7 @@
     <tbody>
     @foreach($agencys as $key => $agency)
         <tr>
+            <td>{{ $key + $agencys ->firstItem() }}</td>
             <td>{{$agency->id}}</td>
             <td>{{$agency->name}}</td>
             <td>{{$agency->address}}</td>
