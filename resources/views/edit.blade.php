@@ -16,49 +16,24 @@
         <label class="input-group-text" id="basic-addon1">Tên đại lý</label>
         <input type="text" name="name" class="form-control" aria-label="Username" aria-describedby="basic-addon1" value="{{$agency->name}}">
     </div>
-    @if($errors->any())
-        <div class=" alert-danger">
-            {{$errors->first('name')}}
-        </div>
-    @endif
 
     <div class="input-group mb-3">
         <label class="input-group-text" id="basic-addon1">Địa chỉ</label>
         <input name="address" class="form-control"  aria-label="Recipient's username" aria-describedby="basic-addon2" value="{{$agency->address}}">
     </div>
-    @if($errors->any())
-        <div class=" alert-danger">
-            {{$errors->first('address')}}
-        </div>
-    @endif
 
     <div class="input-group mb-3">
         <label class="input-group-text" id="basic-addon1">Email</label>
         <input type="email" name="email" class="form-control" aria-label="Username" aria-describedby="basic-addon1" value="{{$agency->email}}">
     </div>
-    @if($errors->any())
-        <div class=" alert-danger">
-            {{$errors->first('email')}}
-        </div>
-    @endif
 
     <div class="input-group mb-3">
         <label class="input-group-text" id="basic-addon1">Số điện thoại</label>
         <input type="text" name="phone" class="form-control" aria-label="Username" aria-describedby="basic-addon1" value="{{$agency->phone}}">
     </div>
-    @if($errors->any())
-        <div class=" alert-danger">
-            {{$errors->first('phone')}}
-        </div>
-    @endif
 
     <div class="input-group mb-3">
         <label class="input-group-text" id="basic-addon1">Tên người quản lý</label>
-        @if($errors->any())
-            <div class=" alert-danger">
-                {{$errors->first('userName')}}
-            </div>
-        @endif
 
         <input type="text" class="form-control" name="userName" aria-label="Username" value="{{$agency->userName}}">
         <span class="input-group-text">Trạng thái</span>

@@ -75,7 +75,7 @@ class AgencyController extends Controller
      * @param \App\Models\Agency $agency
      * @return \Illuminate\Http\Response
      */
-    public function update(checkEdit $request, $id)
+    public function update(Request $request, $id)
     {
         $agency = Agency::findOrFail($id);
         $agency->name = $request->input('name');

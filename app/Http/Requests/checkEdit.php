@@ -27,7 +27,6 @@ class checkEdit extends FormRequest
             'name' => 'required',
             'adsress' => 'required',
             'email' => 'required|email',
-            'phone' => 'required|regex:/(0)[0-9]{10}/',
             'userName' => 'required'
         ];
     }
